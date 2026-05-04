@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "name": "Chicken Adobo",
+    "image": "/assets/chicken-adobo.jpg",
+    "description": "A classic Filipino dish of chicken simmered in soy sauce, vinegar, garlic, and peppercorns.",
+    "ingredients": ["1 kg chicken", "1/2 cup soy sauce", "1/2 cup vinegar", "1 head garlic", "1 tsp peppercorns", "2 bay leaves"],
+    "instructions": ["Combine all ingredients in a pot and simmer until chicken is tender.", "Optional: Pan-fry the chicken after simmering for a crispy texture.", "Serve hot with steamed rice."]
+  },
+  {
+    "id": 2,
+    "name": "Sinigang na Baboy",
+    "image": "/assets/pork-sinigang.jpg",
+    "description": "A savory and sour soup made with pork, tamarind broth, and various vegetables.",
+    "ingredients": ["1 kg pork belly", "1.5 liters water", "1 packet tamarind soup mix", "1 large onion", "2 large tomatoes", "1 radish", "1 bundle water spinach"],
+    "instructions": ["Boil pork in water until tender.", "Add onions, tomatoes, and radish. Simmer for 10 minutes.", "Stir in tamarind mix and add water spinach. Serve hot."]
+  },
+  {
+    "id": 3,
+    "name": "Beef Kare-Kare",
+    "image": "/assets/kare-kare.jpg",
+    "description": "A rich and savory Filipino stew with a thick peanut sauce, oxtail, and vegetables.",
+    "ingredients": ["1 kg oxtail", "1/2 cup peanut butter", "1/4 cup toasted ground rice", "1 bundle string beans", "2 eggplants", "1 banana blossom", "Bagoong (shrimp paste)"],
+    "instructions": ["Boil oxtail until tender.", "In a new pot, whisk in ground rice and peanut butter with the broth until thick.", "Add oxtail and vegetables. Serve with bagoong."]
+  },
+  {
+    "id": 4,
+    "name": "Pork Sisig",
+    "image": "/assets/sisig.jfif",
+    "description": "A sizzling, savory dish made from chopped pig's face and belly, seasoned with calamansi and chili.",
+    "ingredients": ["500g pig's face/ears", "250g pork belly", "1 large onion, chopped", "3 chili peppers", "1/4 cup soy sauce", "Calamansi", "1 egg"],
+    "instructions": ["Boil pork parts until tender, then grill or broil until crispy.", "Chop finely and sauté with onions and chili.", "Serve on a sizzling plate, top with a raw egg, and squeeze calamansi over."]
+  },
+  {
+    "id": 5,
+    "name": "Lechon Kawali",
+    "image": "/assets/lechon-kawali.jfif",
+    "description": "Deep-fried pork belly with a perfectly crispy skin and juicy, tender meat.",
+    "ingredients": ["1 kg pork belly slab", "Water", "Salt", "Bay leaves", "Whole peppercorns", "Cooking oil"],
+    "instructions": ["Simmer pork belly in water with salt, bay leaves, and peppercorns until tender.", "Air dry or pat dry completely.", "Deep fry in hot oil until the skin is golden brown and crispy."]
+  },
+  {
+    "id": 6,
+    "name": "Crispy Pata",
+    "image": "/assets/crispy-pata.jpg",
+    "description": "A whole pork leg boiled until tender and then deep-fried until golden and crunchy.",
+    "ingredients": ["1 whole pork leg (pata)", "Water", "Soy sauce", "Vinegar", "Garlic", "Bay leaves", "Cooking oil"],
+    "instructions": ["Boil pork leg with seasonings until very tender.", "Drain and dry thoroughly, preferably chilling it for a few hours.", "Deep fry until skin is blistered and crispy."]
+  },
+  {
+    "id": 7,
+    "name": "Bicol Express",
+    "image": "/assets/bicol-express.jpg",
+    "description": "A spicy and creamy stew made of pork, chili peppers, and coconut milk.",
+    "ingredients": ["500g pork belly, cubed", "2 cups coconut milk", "1/2 cup shrimp paste (bagoong)", "10 long green chilies (siling haba)", "5 red chilies (siling labuyo)", "1 head garlic, minced"],
+    "instructions": ["Sauté garlic, then add pork and cook until lightly browned.", "Add shrimp paste and chilies, cook for a minute.", "Pour in coconut milk, bring to a simmer, and cook until pork is tender and sauce is thick."]
+  },
+  {
+    "id": 8,
+    "name": "Pancit Palabok",
+    "image": "/assets/palabok.jfif",
+    "description": "A noodle dish with a rich shrimp sauce, topped with shrimp, crushed chicharon, and hard-boiled eggs.",
+    "ingredients": ["Rice noodles (palabok noodles)", "Ground pork", "Shrimp", "Smoked fish flakes (tinapa)", "Chicharon, crushed", "Hard-boiled eggs", "Annatto powder for color"],
+    "instructions": ["Cook noodles as per package instructions.", "Make the sauce by sautéing pork and shrimp, then simmering with shrimp broth and annatto.", "Pour sauce over noodles and add all toppings."]
+  },
+  {
+    "id": 9,
+    "name": "Lumpia Shanghai",
+    "image": "/assets/shanghai.jfif",
+    "description": "Crispy, deep-fried spring rolls filled with a savory mixture of ground pork and vegetables.",
+    "ingredients": ["500g ground pork", "1 cup minced carrots", "1 cup minced onions", "Lumpia wrappers", "Cooking oil", "Sweet and sour sauce for dipping"],
+    "instructions": ["Mix ground pork with all the minced vegetables and seasonings.", "Wrap a small amount of the mixture in a lumpia wrapper.", "Deep fry until golden brown and crispy."]
+  },
+  {
+    "id": 10,
+    "name": "Bulalo",
+    "image": "/assets/bulalo.jfif",
+    "description": "A light-colored soup made by cooking beef shanks and bone marrow until the fat has melted into the broth.",
+    "ingredients": ["1 kg beef shanks with bone marrow", "2 corns on the cob, cut into 3 parts", "1/4 head of cabbage", "Pechay or bok choy", "Onions", "Fish sauce"],
+    "instructions": ["Boil beef shanks in a large pot of water for several hours until the meat is falling off the bone.", "Add corn, onions, and cabbage.", "Season with fish sauce and serve piping hot."]
+  },
+  {
+    "id": 11,
+    "name": "Tapsilog",
+    "image": "/assets/tapsilog.jfif",
+    "description": "A popular breakfast meal containing beef tapa, fried rice (sinangag), and a fried egg (itlog).",
+    "ingredients": ["250g beef tapa", "1 cup garlic fried rice (sinangag)", "1 fried egg", "Vinegar dipping sauce", "Sliced tomatoes"],
+    "instructions": ["Fry the beef tapa until cooked to your liking.", "Fry an egg sunny-side up.", "Serve everything on a plate with hot garlic rice and a side of vinegar dip."]
+  },
+  {
+    "id": 12,
+    "name": "Chicken Inasal",
+    "image": "/assets/chicken-inasal.jpg",
+    "description": "A unique variant of grilled chicken from Bacolod, marinated in a mixture of calamansi, pepper, and annatto.",
+    "ingredients": ["1 whole chicken, cut into serving pieces", "Lemongrass", "Ginger", "Garlic", "Calamansi juice", "Vinegar", "Annatto oil for basting"],
+    "instructions": ["Marinate chicken in the mixture for at least 4 hours.", "Grill over hot coals while basting with annatto oil.", "Serve with rice and a dipping sauce of soy sauce, vinegar, and calamansi."]
+  },
+  {
+    "id": 13,
+    "name": "Laing",
+    "image": "/assets/laing.jpg",
+    "description": "A spicy Bicolano dish of shredded taro leaves cooked in thick coconut milk with shrimp paste and chili.",
+    "ingredients": ["Dried taro leaves", "2 cups thick coconut milk", "1/2 cup shrimp paste", "Pork or shrimp for flavor", "Siling labuyo (red chili)"],
+    "instructions": ["Simmer pork/shrimp in coconut milk with shrimp paste and chili.", "Add the dried taro leaves and continue to simmer without stirring until leaves are soft.", "Stir gently and cook until the sauce is very thick and oily."]
+  },
+  {
+    "id": 14,
+    "name": "Dinuguan",
+    "image": "/assets/dinuguan.jfif",
+    "description": "A savory stew of pork offal simmered in a rich, dark gravy of pig blood, garlic, chili, and vinegar.",
+    "ingredients": ["500g pork meat and/or offal", "1 cup pig's blood", "1/2 cup vinegar", "Garlic", "Onion", "Long green chili (siling haba)"],
+    "instructions": ["Sauté garlic and onion, then add pork and cook until brown.", "Pour in vinegar and simmer without stirring for a few minutes.", "Stir in the pig's blood and cook until the sauce thickens. Add green chili before serving."]
+  },
+  {
+    "id": 15,
+    "name": "Pinakbet",
+    "image": "/assets/pinakbet.jpg",
+    "description": "An indigenous Filipino dish from the northern regions, made from mixed vegetables sautéed in fish or shrimp sauce.",
+    "ingredients": ["Squash (kalabasa)", "Eggplant", "Bitter melon (ampalaya)", "Okra", "String beans", "Shrimp paste (bagoong)", "Pork or shrimp"],
+    "instructions": ["Sauté garlic, onion, and pork/shrimp.", "Add the shrimp paste and cook for a minute.", "Add the hard vegetables (squash) first, then the rest, and simmer until tender-crisp."]
+  },
+  {
+    "id": 16,
+    "name": "Arroz Caldo",
+    "image": "/assets/arrozcaldo.jfif",
+    "description": "A hearty Filipino rice porridge (congee) cooked with chicken, ginger, and garnished with toasted garlic.",
+    "ingredients": ["1 cup rice", "500g chicken pieces", "2 liters chicken broth", "1 thumb-sized ginger, sliced", "Toasted garlic flakes", "Scallions", "Hard-boiled egg"],
+    "instructions": ["Sauté ginger and chicken in a pot.", "Add rice and stir-fry for a minute.", "Pour in chicken broth, bring to a boil, then simmer until rice is soft and the porridge is thick. Garnish before serving."]
+  },
+  {
+    "id": 17,
+    "name": "Bistek Tagalog",
+    "image": "/assets/bistek.jpg",
+    "description": "Filipino beef steak made of thin slices of beef marinated and braised in soy sauce and calamansi juice.",
+    "ingredients": ["500g beef sirloin, thinly sliced", "1/2 cup soy sauce", "Juice of 4 calamansi", "2 large onions, cut into rings", "Black pepper"],
+    "instructions": ["Marinate beef in soy sauce, calamansi juice, and pepper for at least an hour.", "Pan-fry the beef slices until brown. Set aside.", "In the same pan, sauté onion rings until soft, then add back the beef and the marinade. Simmer for a few minutes."]
+  },
+  {
+    "id": 18,
+    "name": "Kaldereta",
+    "image": "/assets/kaldereta.jfif",
+    "description": "A classic Filipino meat stew, typically with goat or beef, cooked in a tomato-based sauce with liver paste.",
+    "ingredients": ["1 kg beef or goat meat, cubed", "1 can tomato sauce", "1/4 cup liver paste", "Potatoes", "Carrots", "Bell peppers", "Green olives"],
+    "instructions": ["Sauté garlic and onions, then brown the meat.", "Add tomato sauce and water, then simmer until meat is tender.", "Add liver paste, vegetables, and olives. Cook until vegetables are tender."]
+  },
+  {
+    "id": 19,
+    "name": "Mechado",
+    "image": "/assets/mechado.jpg",
+    "description": "A braised beef dish cooked in a tomato sauce with a strip of pork fat inserted into the meat.",
+    "ingredients": ["1 kg beef chuck, cubed", "Pork fat, cut into strips", "1 can tomato sauce", "Potatoes", "Carrots", "Soy sauce", "Calamansi juice"],
+    "instructions": ["Lard the beef with pork fat.", "Brown the beef in a pan.", "Add tomato sauce, soy sauce, and calamansi. Simmer until beef is tender.", "Add potatoes and carrots and cook until done."]
+  },
+  {
+    "id": 20,
+    "name": "Ginataang Manok",
+    "image": "/assets/ginataang-manok.jpg",
+    "description": "A Filipino chicken stew made from chicken in coconut milk with green papaya and leafy vegetables.",
+    "ingredients": ["1 kg chicken, cut up", "2 cups coconut milk", "1 small green papaya, wedged", "Ginger", "Onion", "Garlic", "Siling haba (long green chili)"],
+    "instructions": ["Sauté ginger, garlic, and onion. Add chicken and cook until color changes.", "Pour in coconut milk and bring to a simmer.", "Add papaya and chili, and cook until chicken and papaya are tender."]
+  }
+]

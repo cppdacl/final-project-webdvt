@@ -1,0 +1,318 @@
+:root {
+  --bg-primary: #0a0a0e;
+  --bg-secondary: #1e1f22;
+  --bg-card: #111116;
+  --btn: #1c1c22;
+  --purple: #4a13af;
+  --text-primary: #f2f3f5;
+  --text-secondary: #b5bac1;
+  --border: #111016;
+  --border-selected: #111016;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
+header {
+  background-color: var(--bg-secondary);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a:hover {
+  color: var(--purple);
+}
+
+.container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: white;
+  border-radius: 32px;
+  margin-bottom: 2rem;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: var(--bg-card);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  transition: 0.2s ease;
+}
+
+.card:hover {
+  border-color: var(--purple);
+  transform: translateY(-4px);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: var(--text-secondary);
+  margin-bottom: 15px;
+}
+
+.card {
+  background: var(--bg-card);
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+  transition: 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  border-color: var(--purple);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.card-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  background: #000;
+  border-radius: 6px;
+}
+
+.card-content {
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-content h3 {
+  margin-bottom: 8px;
+}
+
+.card-content p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 16px;
+  flex-grow: 1;
+}
+
+.button {
+  background: var(--btn);
+  border: none;
+  padding: 10px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.button:hover {
+  background: var(--purple);
+}
+
+.detail-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+ul {
+  margin: 1rem 0;
+  padding-left: 20px;
+}
+
+.empty-text {
+  color: var(--text-secondary);
+  text-align: center;
+  margin-top: 20px;
+}
+
+.favorites-btn {
+  background: var(--btn);
+  border: none;
+  width: 43px;
+  height: 43px;
+  padding: 9px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+  color: white;
+}
+
+.favorites-btn:hover {
+  background: var(--purple);
+}
+
+
+/* Wrap input + button */
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 2rem;
+}
+
+.search-wrapper .search-input {
+  flex: 1;
+  width: 100%;
+  margin-bottom: 0; 
+}
+
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 800px; 
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+.search-wrapper .search-input {
+  flex: 1; 
+  width: auto;
+  margin-bottom: 0; 
+}
+
+.favorites-btn {
+  flex-shrink: 0;
+  width: 43px;
+  height: 43px;
+  padding: 0; 
+  font-size: 1.2rem;
+}
+
+
+.recipe-page-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: var(--bg-card);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.recipe-page-container h2 {
+  font-size: 2rem;
+}
+
+.recipe-page-container img {
+  width: 100%;
+  height: 25vh;
+  border-radius: 8px;
+  margin: 1rem 0;
+  object-fit: cover;
+}
+
+.recipe-page-container p {
+  color: var(--text-primary);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.recipe-page-container h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+  color: var(--text-primary);
+}
+
+.recipe-page-container ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.recipe-page-container ul li {
+  margin-bottom: 0.5rem;
+  color: var(--text-secondary);
+}
+
+.recipe-page-button {
+  background: var(--btn);
+  border: none;
+  padding: 12px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: 0.2s;
+}
+
+.recipe-page-button:hover {
+  background: var(--purple);
+}
+
+.recipe-title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.7rem;
+}
+
+.recipe-back-button {
+  background: var(--btn);
+  color: var(--text-primary);
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: normal;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+  padding-bottom: 3px;
+}
+
+.recipe-back-button:hover {
+  background: var(--purple);
+  color: white;
+}
