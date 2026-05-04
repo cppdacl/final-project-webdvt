@@ -1,30 +1,23 @@
 import { useEffect, useState } from "react";
-import { useNavigate, useLocation } from "react-router-dom";
 import type { Recipe } from "../types/Recipe";
 import RecipeCard from "../components/RecipeCard";
 import SearchBar from "../components/SearchBar";
 import { useFavorites } from "../contexts/FavoritesContext";
+import { fetchRecipes } from "../api/recipes";
 
 export default function Home() {
   const [recipes, setRecipes] = useState<Recipe[]>([]);
   const [search, setSearch] = useState("");
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
   const { favorites, showFavorites } = useFavorites();
-  const navigate = useNavigate();
-  const location = useLocation();
 
   useEffect(() => {
-    fetch(`${import.meta.env.BASE_URL}recipes.json`)
-      .then((res) => res.json())
-      .then((data: Recipe[]) => setRecipes(data));
+    fetchRecipes()
+      .then(setRecipes)
+      .catch(() => setError("Failed to load recipes."))
+      .finally(() => setLoading(false));
   }, []);
-
-  useEffect(() => {
-    if (showFavorites && location.pathname !== "/favorites") {
-      navigate("/favorites", { replace: true });
-    } else if (!showFavorites && location.pathname === "/favorites") {
-      navigate("/", { replace: true });
-    }
-  }, [showFavorites]);
 
   const listToShow = showFavorites ? favorites : recipes;
 
@@ -33,8 +26,8 @@ export default function Home() {
     const searchable = [
       recipe.name,
       recipe.description,
-      recipe.instructions,
-      ...(recipe.ingredients || []),
+      ...(recipe.ingredients ?? []),
+      ...(recipe.instructions ?? []),
     ]
       .filter(Boolean)
       .join(" ")
@@ -45,14 +38,17 @@ export default function Home() {
   return (
     <div className="container">
       <SearchBar value={search} onChange={setSearch} />
-      {filtered.length === 0 ? (
+      {loading && <p className="empty-text">Loading recipes...</p>}
+      {error && <p className="empty-text">{error}</p>}
+      {!loading && !error && filtered.length === 0 && (
         <p className="empty-text">
           {showFavorites ? "No favorites found :(" : "No recipes found :("}
         </p>
-      ) : (
+      )}
+      {!loading && !error && filtered.length > 0 && (
         <div className="grid">
           {filtered.map((recipe) => (
-            <RecipeCard key={recipe.id} recipe={recipe} />
+            <RecipeCard key={recipe._id} recipe={recipe} />
           ))}
         </div>
       )}

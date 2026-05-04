@@ -1,5 +1,6 @@
 import "./SearchBar.css";
 import { useFavorites } from "../contexts/FavoritesContext";
+import { useNavigate } from "react-router-dom";
 
 interface Props {
   value: string;
@@ -8,6 +9,7 @@ interface Props {
 
 export default function SearchBar({ value, onChange }: Props) {
   const { showFavorites, toggleShowFavorites, favorites } = useFavorites();
+  const navigate = useNavigate();
 
   return (
     <div className="search-wrapper">
@@ -24,7 +26,11 @@ export default function SearchBar({ value, onChange }: Props) {
         </div>
         <button
           className="favorites-btn"
-          onClick={toggleShowFavorites}
+          onClick={() => {
+            toggleShowFavorites();
+            if (!showFavorites) navigate('/favorites');
+            else navigate('/');
+          }}
           title="View Favorites"
           style={{ backgroundColor: showFavorites ? "#4a13af" : undefined }}
         >
@@ -45,6 +51,27 @@ export default function SearchBar({ value, onChange }: Props) {
           </svg>
         </button>
       </div>
+      <button
+        className="favorites-btn"
+        onClick={() => navigate('/manage')}
+        title="Manage Recipes"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth={2}
+          width="20"
+          height="20"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M12 4v16m8-8H4"
+          />
+        </svg>
+      </button>
     </div>
   );
 }
