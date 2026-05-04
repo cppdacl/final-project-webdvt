@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { api } from "../api";
 import type { User, Transaction } from "../types";
 import { Card, Btn, Spinner, Toast } from "../components/UI";
-import { TxRow } from "../components/Txrow";
+import { TxRow } from "../components/TxRow";
 
 const fmt = (n: number) =>
   "₱" +

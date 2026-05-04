@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { api } from "../api";
 import type { Transaction } from "../types";
 import { Card, Btn, Spinner } from "../components/UI";
-import { TxRow } from "../components/Txrow";
+import { TxRow } from "../components/TxRow";
 
 export const HistoryPage = () => {
   const [txs, setTxs] = useState<Transaction[]>([]);
