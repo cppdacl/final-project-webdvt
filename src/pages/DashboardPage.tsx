@@ -11,7 +11,7 @@ import {
   UserSearch,
   Spinner,
 } from "../components/UI";
-import { TxRow } from "../components/Txrow";
+import { TxRow } from "../components/TxRow";
 
 const fmt = (n: number) =>
   "₱" +
